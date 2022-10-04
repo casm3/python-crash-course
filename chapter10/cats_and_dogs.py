@@ -11,12 +11,12 @@ in the except block executes properly.
 """
 
 try:
-    with open("cats.txt") as cats_file:
+    with open("/data/cats.txt") as cats_file:
         lines = cats_file.readlines()
         for line in lines:
             print(line.rstrip())
 
-    with open("dogs.txt") as dogs_file:
+    with open("/data/dogs.txt") as dogs_file:
         lines = dogs_file.readlines()
         for line in lines:
             print(line.rstrip())
@@ -29,12 +29,12 @@ Exercise 10.8 to fail silently if either file is missing.
 """
 
 try:
-    with open("cats.txt") as cats_file:
+    with open("/data/cats.txt") as cats_file:
         lines = cats_file.readlines()
         for line in lines:
             print(line.rstrip())
 
-    with open("dogs.txt") as dogs_file:
+    with open("/data/dogs.txt") as dogs_file:
         lines = dogs_file.readlines()
         for line in lines:
             print(line.rstrip())

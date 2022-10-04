@@ -3,7 +3,7 @@
 When they respond, write their name to a file called guest.txt.
 """
 user_name = input("Enter your name: ")
-with open("guest.txt", mode="w") as text_file:
+with open("/data/guest.txt", mode="w") as text_file:
     text_file.writelines(user_name)
 
 """
@@ -16,7 +16,7 @@ user_name = input("Enter your name or type 'quit' to exit: ")
 
 while user_name != 'quit':
     print(f"Welcome, {user_name}.")
-    with open("guest_book.txt", mode="a") as text_file:
+    with open("/data/guest_book.txt", mode="a") as text_file:
         text_file.writelines(user_name + "\n")
     user_name = input("Enter your name or type 'quit' to exit: ")
 
@@ -28,6 +28,6 @@ to a file that stores all responses.
 poll_vote = input("Why do you like Programming? Type 'quit' to exit: ")
 
 while poll_vote != 'quit':
-    with open("votes.txt", mode="a") as text_file:
+    with open("/data/votes.txt", mode="a") as text_file:
         text_file.writelines(poll_vote + "\n")
     poll_vote = input("Why do you like Programming? Type 'quit' to exit: ")

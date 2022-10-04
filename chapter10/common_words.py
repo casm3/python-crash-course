@@ -23,7 +23,7 @@ count words such as 'then' and 'there'. Try couting 'the ' with
 a space in the string, and see how much lower your count is.
 """
 
-with open("2641-0.txt") as file_text:
+with open("/data/2641-0.txt") as file_text:
     lines = file_text.readlines()
     count_the, count_the_with_space = 0, 0
     for line in lines:

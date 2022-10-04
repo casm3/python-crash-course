@@ -20,4 +20,4 @@ def read_file(path: str):
         print(line.replace("Python", "C").strip())
 
 
-read_file("learning_python.txt")
+read_file("/data/learning_python.txt")
